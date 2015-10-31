@@ -20,7 +20,7 @@
     return self;
 }
 
-- (void) setProgress:(NSUInteger)progress {
+- (void) setProgress:(unsigned long)progress {
     if (_progress == 100 && progress>100) {
         return;
     }

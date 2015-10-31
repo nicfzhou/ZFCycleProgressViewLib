@@ -13,7 +13,7 @@
 @interface ZFCycleProgressView : UIView
 
 @property(strong,nonatomic) ZFCycleProgressStyle *style;
-@property(assign,nonatomic) NSUInteger progress;/**< 进度值：0-100  */
+@property(assign,nonatomic) unsigned long progress;/**< 进度值：0-100  */
 
 - (instancetype) initWithFrame:(CGRect)frame style:(ZFCycleProgressStyle*) style;
 
