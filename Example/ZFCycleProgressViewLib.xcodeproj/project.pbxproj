@@ -23,6 +23,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		C4C42054896A7AA04581C1BE /* Pods_ZFCycleProgressViewLib_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7731CE8AC1DE8BF2105841B4 /* Pods_ZFCycleProgressViewLib_Tests.framework */; };
+		E0585EC81BE4F2F700F889D2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0585EC71BE4F2F700F889D2 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		346D45698CA8FD279BBB1B28 /* Pods-ZFCycleProgressViewLib_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZFCycleProgressViewLib_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZFCycleProgressViewLib_Example/Pods-ZFCycleProgressViewLib_Example.release.xcconfig"; sourceTree = "<group>"; };
-		6003F58A195388D20070C39A /* ZFCycleProgressViewLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = ZFCycleProgressViewLib.app; path = ZFCycleProgressViewLib_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58A195388D20070C39A /* ZFCycleProgressViewLib_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZFCycleProgressViewLib_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -50,7 +51,7 @@
 		6003F5A5195388D20070C39A /* ZFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFViewController.h; sourceTree = "<group>"; };
 		6003F5A6195388D20070C39A /* ZFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6003F5AE195388D20070C39A /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Tests.xctest; path = ZFCycleProgressViewLib_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F5AE195388D20070C39A /* ZFCycleProgressViewLib_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZFCycleProgressViewLib_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -65,6 +66,7 @@
 		C7AAE4F0FC2167085429A433 /* Pods-ZFCycleProgressViewLib_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZFCycleProgressViewLib_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZFCycleProgressViewLib_Example/Pods-ZFCycleProgressViewLib_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		CB52053E43857B9B7D662D36 /* Pods-ZFCycleProgressViewLib_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZFCycleProgressViewLib_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZFCycleProgressViewLib_Tests/Pods-ZFCycleProgressViewLib_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		CF06E8921060CE66FF06B1D7 /* ZFCycleProgressViewLib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZFCycleProgressViewLib.podspec; path = ../ZFCycleProgressViewLib.podspec; sourceTree = "<group>"; };
+		E0585EC71BE4F2F700F889D2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0585EC81BE4F2F700F889D2 /* QuartzCore.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
@@ -108,8 +111,8 @@
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58A195388D20070C39A /* ZFCycleProgressViewLib.app */,
-				6003F5AE195388D20070C39A /* Tests.xctest */,
+				6003F58A195388D20070C39A /* ZFCycleProgressViewLib_Example.app */,
+				6003F5AE195388D20070C39A /* ZFCycleProgressViewLib_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,6 +120,7 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E0585EC71BE4F2F700F889D2 /* QuartzCore.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
@@ -213,7 +217,7 @@
 			);
 			name = ZFCycleProgressViewLib_Example;
 			productName = ZFCycleProgressViewLib;
-			productReference = 6003F58A195388D20070C39A /* ZFCycleProgressViewLib.app */;
+			productReference = 6003F58A195388D20070C39A /* ZFCycleProgressViewLib_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6003F5AD195388D20070C39A /* ZFCycleProgressViewLib_Tests */ = {
@@ -234,7 +238,7 @@
 			);
 			name = ZFCycleProgressViewLib_Tests;
 			productName = ZFCycleProgressViewLibTests;
-			productReference = 6003F5AE195388D20070C39A /* Tests.xctest */;
+			productReference = 6003F5AE195388D20070C39A /* ZFCycleProgressViewLib_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */

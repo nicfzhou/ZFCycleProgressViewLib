@@ -1,0 +1,21 @@
+PODS:
+  - FBSnapshotTestCase (2.0.7):
+    - FBSnapshotTestCase/SwiftSupport (= 2.0.7)
+  - FBSnapshotTestCase/Core (2.0.7)
+  - FBSnapshotTestCase/SwiftSupport (2.0.7):
+    - FBSnapshotTestCase/Core
+  - ZFCycleProgressViewLib (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - ZFCycleProgressViewLib (from `../`)
+
+EXTERNAL SOURCES:
+  ZFCycleProgressViewLib:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 7e85180d0d141a0cf472352edda7e80d7eaeb547
+  ZFCycleProgressViewLib: 16a2df9d64aea4798810df3dbecb14fd1c43235a
+
+COCOAPODS: 0.39.0

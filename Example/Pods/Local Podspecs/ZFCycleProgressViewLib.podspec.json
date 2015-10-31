@@ -1,0 +1,30 @@
+{
+  "name": "ZFCycleProgressViewLib",
+  "version": "0.1.0",
+  "summary": "生成自定义的圆形进度圈",
+  "description": "",
+  "homepage": "https://github.com/nicfzhou/ZFCycleProgressViewLib",
+  "license": "MIT",
+  "authors": {
+    "nicfzhou": "nicfzhou@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/nicfzhou/ZFCycleProgressViewLib.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "6.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "ZFCycleProgressViewLib": [
+      "Pod/Assets/*.png"
+    ]
+  },
+  "public_header_files": "Pod/Classes/**/*.h",
+  "frameworks": [
+    "UIKit",
+    "QuartzCore"
+  ]
+}

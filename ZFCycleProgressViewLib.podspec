@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "ZFCycleProgressViewLib"
   s.version          = "0.1.0"
-  s.summary          = "A short description of ZFCycleProgressViewLib."
+  s.summary          = "生成自定义的圆形进度圈"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -19,14 +19,14 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/ZFCycleProgressViewLib"
+  s.homepage         = "https://github.com/nicfzhou/ZFCycleProgressViewLib"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "nicfzhou" => "nicfzhou@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/ZFCycleProgressViewLib.git", :tag => s.version.to_s }
+  s.source           = { :git => "/Users/zhoufeng/Documents/workspace/112.4.10.46/Study/ZFCycleProgressViewLib", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '6.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
@@ -34,7 +34,7 @@ Pod::Spec.new do |s|
     'ZFCycleProgressViewLib' => ['Pod/Assets/*.png']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.public_header_files = 'Pod/Classes/**/*.h'
+  s.frameworks = 'UIKit', 'QuartzCore'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

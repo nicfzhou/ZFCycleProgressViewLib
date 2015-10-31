@@ -1,0 +1,6 @@
+framework module ZFCycleProgressViewLib {
+  umbrella header "ZFCycleProgressViewLib-umbrella.h"
+
+  export *
+  module * { export * }
+}
