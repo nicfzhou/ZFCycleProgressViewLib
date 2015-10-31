@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'ZFCycleProgressViewLib_Example', :exclusive => true do
+  pod "ZFCycleProgressViewLib", :path => "../"
+end
+
+target 'ZFCycleProgressViewLib_Tests', :exclusive => true do
+  pod "ZFCycleProgressViewLib", :path => "../"
+
+  pod 'FBSnapshotTestCase'
+end
