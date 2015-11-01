@@ -20,12 +20,20 @@
     return self;
 }
 
-- (void) setProgress:(unsigned long)progress {
+- (void) setProgress:(int)progress {
     if (_progress == 100 && progress>100) {
         return;
     }
-    _progress = progress>100?100:progress;
-    [self performSelectorOnMainThread:@selector(setNeedsDisplay) withObject:nil waitUntilDone:YES];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+        int start = _progress;
+        int end = progress>100?100:(progress<0?0:progress);
+        BOOL isAdding = end>start;
+        for (int i = start+(isAdding?1:-1); isAdding?i<=end:i>=end; isAdding?i++:i--) {
+            _progress = i;
+            [self performSelectorOnMainThread:@selector(setNeedsDisplay) withObject:nil waitUntilDone:YES];
+        }
+
+    });
 }
 
 - (void) drawRect:(CGRect)rect{
@@ -84,7 +92,7 @@
     CGContextStrokePath(ctx);
     
     //绘制text
-    NSString *text = [NSString stringWithFormat:@"%ld%%",self.progress];
+    NSString *text = [NSString stringWithFormat:@"%u%%",self.progress];
     NSDictionary *fontAttr = @{NSFontAttributeName:self.style.textFont,
                                NSForegroundColorAttributeName:self.style.textFontColor,
                                NSBackgroundColorAttributeName:[UIColor clearColor]};
