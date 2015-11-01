@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '1B4EBEB4C22F843DEC192E9A'
+               BlueprintIdentifier = 'CD09429B94DDB5D59A700302'
                BlueprintName = 'ZFCycleProgressViewLib'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'ZFCycleProgressViewLib.framework'>

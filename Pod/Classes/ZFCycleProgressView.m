@@ -42,9 +42,10 @@
     
     //绘制底部圆
     CGContextBeginPath(ctx);
-    CGContextSetFillColor(ctx, CGColorGetComponents(self.style.backgroundColor.CGColor));
-    CGContextAddArc(ctx, x+radius, y+radius, radius, 0, M_PI*2, 1);
-    CGContextFillPath(ctx);
+    CGContextSetStrokeColor(ctx, CGColorGetComponents(self.style.backgroundColor.CGColor));
+    CGContextAddArc(ctx, x+radius, y+radius, radius-self.style.foregoundWidth*.5, 0, M_PI*2, 1);
+    CGContextSetLineWidth(ctx, self.style.foregoundWidth);
+    CGContextStrokePath(ctx);
     
     
     //进度圈起始角度
@@ -71,9 +72,9 @@
     //绘制前景圆
     CGContextBeginPath(ctx);
     CGContextSetStrokeColor(ctx, CGColorGetComponents(self.style.foregroundColor.CGColor));
-    CGContextSetLineWidth(ctx, self.style.foregoundWidth);
+    CGContextSetLineWidth(ctx, self.style.foregoundWidth*.9);
     CGContextSetLineCap(ctx, self.style.arrowStyle == ZFProgressArrowStyleRound?kCGLineCapRound:kCGLineCapSquare);
-    CGContextSetLineJoin(ctx, self.style.arrowStyle == ZFProgressArrowStyleRound?kCGLineJoinRound:kCGLineJoinBevel);
+    CGContextSetLineJoin(ctx, self.style.arrowStyle == ZFProgressArrowStyleRound?kCGLineJoinRound:kCGLineJoinMiter);
     CGFloat endAngle = startAngle + M_PI * 2 *(self.progress * 0.01) * (self.style.isClockwised?1.:-1.);
     CGContextAddArc(ctx, x+radius, y+radius,
                     radius-self.style.foregoundWidth*.5,

@@ -20,7 +20,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     
-    _progress = [[ZFCycleProgressView alloc] initWithFrame:CGRectMake(20, 20, 100, 100) style:[ZFCycleProgressStyle defaultStyle]];
+    _progress = [[ZFCycleProgressView alloc] initWithFrame:CGRectMake(20, 20, 150, 100) style:[ZFCycleProgressStyle defaultStyle]];
     [self.view addSubview:_progress];
     
     
