@@ -13,13 +13,13 @@
 + (instancetype) defaultStyle{
     ZFCycleProgressStyle *style = [ZFCycleProgressStyle new];
     style.textFont        = [UIFont systemFontOfSize:14.0];
-    style.textFontColor   = [UIColor colorWithRed:.9 green:.9 blue:.9 alpha:1.0];
-    style.backgroundColor = [UIColor clearColor];
-    style.foregroundColor = [UIColor orangeColor];
+    style.textFontColor   = [UIColor colorWithRed:0.98 green:0.45 blue:0.12 alpha:1];
+    style.backgroundColor = [UIColor colorWithRed:0.98 green:0.74 blue:0.58 alpha:1];
+    style.foregroundColor = [UIColor colorWithRed:0.98 green:0.41 blue:0.02 alpha:1];
     style.foregoundWidth  = 15.0;
-    style.isClockwised    = NO;
+    style.isClockwised    = YES;
     style.textPosition    = ZFProgressTextPoistionCenter;
-    style.arrowStyle      = ZFProgressArrowStyleAngle;
+    style.arrowStyle      = ZFProgressArrowStyleRound;
     style.cycleStartAngle = ZFProgressStartAngleTop;
 
     return style;

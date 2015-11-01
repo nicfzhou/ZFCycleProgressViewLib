@@ -16,6 +16,6 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 7e85180d0d141a0cf472352edda7e80d7eaeb547
-  ZFCycleProgressViewLib: 16a2df9d64aea4798810df3dbecb14fd1c43235a
+  ZFCycleProgressViewLib: 2a64fe7b72076c6e8e9cfbe9062202debd2082eb
 
 COCOAPODS: 0.39.0
