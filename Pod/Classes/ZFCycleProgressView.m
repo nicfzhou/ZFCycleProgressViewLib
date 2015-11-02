@@ -10,6 +10,10 @@
 #import <QuartzCore/QuartzCore.h>
 
 
+@interface ZFCycleProgressView()
+@property (strong,nonatomic) NSBlockOperation *operation;
+@end
+
 @implementation ZFCycleProgressView
 
 - (instancetype) initWithFrame:(CGRect)frame style:(ZFCycleProgressStyle*) style{
@@ -24,16 +28,21 @@
     if (_progress == 100 && progress>100) {
         return;
     }
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+    
+    [_operation cancel];
+    _operation = nil;
+    __weak typeof(self) weakSelf = self;
+    _operation = [NSBlockOperation blockOperationWithBlock:^{
         int start = _progress;
         int end = progress>100?100:(progress<0?0:progress);
         BOOL isAdding = end>start;
-        for (int i = start+(isAdding?1:-1); isAdding?i<=end:i>=end; isAdding?i++:i--) {
+        int step = isAdding?1:-1;
+        for (int i = start+step; (isAdding?i<=end:i>=end) && !weakSelf.operation.cancelled; i+=step) {
             _progress = i;
             [self performSelectorOnMainThread:@selector(setNeedsDisplay) withObject:nil waitUntilDone:YES];
         }
-
-    });
+    }];
+    [[[NSOperationQueue alloc] init] addOperation:self.operation];
 }
 
 - (void) drawRect:(CGRect)rect{
