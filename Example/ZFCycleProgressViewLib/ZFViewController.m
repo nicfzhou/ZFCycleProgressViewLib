@@ -49,11 +49,13 @@
 }
 
 - (void) btnHit{
-    _progress.progress += 20;
+    _progress.progress += 10;
+    _progress.progress += 10;
     
 }
 -(void) btnHit2{
-    _progress.progress -= 20;
+    _progress.progress -= 10;
+    _progress.progress -= 10;
 }
 
 @end
